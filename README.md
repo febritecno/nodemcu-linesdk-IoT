@@ -4,4 +4,5 @@ smart home asistent with line chatbot (HASANA), arest cloud, mqtt, arduino, esp8
 ## SKILL
 ### TURN ON / OFF LAMP
 ### TURN ON / OFF LED
-### ANALOG LOG GAS SENSOR (LPG,CO,SMOKE)
+### ANALOG LOG RESISTENSI GAS SENSOR (LPG,CO,SMOKE)
+### BLINK LED WHEN DETECTING WIFI
