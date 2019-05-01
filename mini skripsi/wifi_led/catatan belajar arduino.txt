@@ -1,0 +1,139 @@
+=======================================
+elektro cuma kegiatan manipulasi resistensi/tegangan
+
+sama dengan program arduino/embbed system cuma manipulasi data resistensi / tegangan
+
+tegangan = volt
+arus= ampere
+daya = watt
+-------------------------------------------------
+ringkasan pendek fungsi tiap komponen elektronika.
+
+resistor = membatasi arus (ohm)
+Kapasitor= menyimpan tegangan, contoh (elco)
+induktor=mengatur frekuensi/penyambung
+dioda=mengalirkan listrik hanya searah/ menghambat, contoh (LED)
+
+transistor(transfer resistor)=untuk atur arah arus / routing (ada 3 pin / terminal (kaki) yaitu Base/Basis (B), Emitor (E) dan Collector/Kolektor (K).) -> penguat arus/switch/stabil tegangan
+
+IC = kumpulan dari berbagai komponen hingga ribuan komponen elektronika yang di ringkas.
+Relay/ saklar= ON / OFF jalur arus.
+
+=======================================
+
+VCC = VOLT
+GND = GROUND
+
+A0 = analog
+D1-13= digital
+
+RX, TX= serial
+
+vin = power supply dari luar
+
+rst = reset
+vu = 5v
+
+data sheet
+
+membuat arduino itu konsepnya manipulasi tegangan (volt) dari resource boardnya. ada pin menyediakan 5v dan 3.3v. 
+
+ANALOG = jumlah volt tegangan berupa angka.
+
+DIGITAL = 1 dan 0 / HIGH dan LOW
+
+jika modulkomponen kurang daya maka tinggal Gambungkan 2/lebih pin vcc dari board untuk disambung ke modul komponennya.
+
+sebenarnya dikomponen elektronika seperti resistor dan lainnya itu  pemicu aksinya adalah jumlah tegangan yang lewat atau management tegangan tersebut.
+
+INTI ELEKTRONIKA / BUAT SKEMATIK JALUR ADALAH MANAGEMENT DAN MANIPULASI TEGANGAN (VOLT) UNTUK MODUL KOMPONEN. 
+
+SERTA HARUS ADA VCC(+) HULU DAN HILIR GND(-) PADA JALURNYA.
+
+VCC BISA DI TAMBAH / DIRANGKAP BIAR BESAR TAPI GND PADA BOARD HARUS HANYA SATU.
+
+--------
+
+
+
+MQTT message broker => bergantung pada koneksi internet
+
+
+
+----------
+ref:
+
+https://alselectro.wordpress.com/2016/11/29/esp8266-wifi-library-on-arduino-ide/
+
+https://www.hackster.io/Levantino/control-every-device-from-everywhere-with-arest-d79a3d
+
+https://www.instructables.com/id/Home-Automation-InternetCloud-Controlled-MQTT-IoT-/
+
+https://medium.com/coinmonks/real-time-data-transfer-for-iot-with-mqtt-android-and-nodemcu-ae4b01f87be4
+---------------------
+
+
+
+lihat detail komponen
+https://components101.com/mq2-gas-sensor
+
+lihat detail library
+https://www.arduinolibraries.info/libraries/pub-sub-client
+
+
+https://www.hackster.io/ -> gudang DIY
+
+
+IOplatform , editor arduino bisa run di visual code. asek
+
+bahasa indonesia
+https://www.nyebarilmu.com/cara-mengakses-sensor-gas-menggunakan-arduino/
+
+
+jenis komponen elektronika
+https://teknikelektronika.com/jenis-jenis-komponen-elektronika-beserta-fungsi-dan-simbolnya/
+------
+
+VCC -> iku plus (daya)
+GND -> iku minus
+
+
+keduanya harus terhubung.
+
+dalam sistem aliran arduino
+
+-------------------------------------------
+
+data sheet, pelajari skema pin in out komponen dipakai.
+
+pasti ada VCC,GND dan data digital / analog (data tegangan volt 5v/3v)
+membuat jalur elektronika.
+
+
+eagle -> buat design skematik + board pcb
+
+Fritzing -> buat design jalur pcb tapi gui
+
+
+
+programing microcontroller / embbed system harus management distribusi tegangan(volt) untuk sampai ke komponennya.
+
+
+beardboard -> bagian sebelah paling kanan dan kiri pembacaan arus nya dari atas ke bawah / sebaliknya.
+	       
+
+bagian sebelah tengah pembacaan arusnya ke kanan dan ke kiri.
+
+baca datasheet komponen.
+
+*tiap komponen harus mendapat suplay pin VCC(+) dan GND(-). serta pin data  adalah pin data inputan / outputan dari signal digital. (di slot digital atau slot analog data tersebut bisa di manfaatkan.)
+
+perbedaan
+digital
+- hanya berisi data HIGH dan LOW (1 dan 0); yang bisa kita manipulasi
+- biasanya pada komponen modul seperti modul wifi,relay,suhu, dll. bisa juga ada modul butuh analog
+
+analog
+- berupa data voltage(angka tegangan). yang kita manipulasi data resistensinya untuk kebutuhan program.
+
+- komponen telanjang seperti LED,resistor,transistor, kapasistor, LDR dan sejenisnya.
