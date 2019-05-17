@@ -2,7 +2,8 @@
 
 smart home asistent with line chatbot (HASANA), arest.io cloud, mqtt, arduino, esp8266, 
 
-##Components
+
+## Components
 1. Nodemcuv3 board
 2. Pin jumper
 3. Breadboard
@@ -14,6 +15,7 @@ smart home asistent with line chatbot (HASANA), arest.io cloud, mqtt, arduino, e
 9. Glitch server for line webhook
 10. 1 Led
 11. 1 Resistor
+
 
 ## SKILL
 ### TURN ON / OFF LAMP
